@@ -1,0 +1,125 @@
+<!-- 見たな...小僧...貴様を夜桜の墓に埋めてやろう... -->
+ <!-- この試作救世主の夜桜(プロトメサイアノヨザクラ)になぁ... -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="何でも屋ヒソ">
+  <meta name="description" content="何でも屋＿ヒソです。技術、技能なんでもお任せ...いやココはただの趣味公開場です。">
+  <title>何でも屋＿ヒソ</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #fefefe;
+    }
+
+    /* レイアウト全体のコンテナ（横並びにするためにflex） */
+    .container {
+      display: flex;
+    }
+
+    /* サイドメニュー（左側） */
+    .sidebar {
+      width: 200px;
+      background-color: #8bd0ff;
+      padding: 20px;
+      border-right: 2px solid #999; /* 右に仕切り線 */
+      height: 100vh; /* 全画面の高さ */
+      position: fixed; 
+    }
+
+    /* サイドメニュー内のリンク設定 */
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      color: #a8489a;
+      text-decoration: none;
+    }
+
+    /* リンクにカーソルを乗せた時の見た目 */
+    .sidebar a:hover {
+      background-color: #0066ff;
+    }
+
+    /* メインコンテンツ（右側） */
+    .main {
+      flex-grow: 1;
+      padding: 20px;
+      background-color: #e6faff;
+      height: 100vh;
+    }
+
+    /* 見出し（タイトル） */
+    h1 {
+      font-size: 20px;
+      color: #003366;
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<style>
+    .gakubuti1 {
+      border: 6px double #0084ff;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #bbf5ff;
+      text-align: center;
+      width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+
+<body>
+
+<!-- ページ全体の箱（サイドバー＋メインの2カラム） -->
+<div class="container">
+
+  <!-- 左のメニュー欄 -->
+  <div class="sidebar">
+    <a href="index.html">TOP</a>
+    <a href="koushin.html">更新履歴</a>
+    <!-- <a href="#">秘密の部屋（後で追加）</a> -->
+    <a href="profile.html">プロフィール</a>
+  </div>
+
+  <!-- 右のメイン表示欄 -->
+  <div id=top class="main">
+    <h1><font size="14"color="#0084ff"><center>何でも屋＿ヒソ　のホームページ</font></center></h1>
+
+    <center><img src="As.png" alt="ヒソ君のアイコンです" width="300" oncontextmenu="alert('何をする気だ！！！');return false"></center>
+
+    <!-- 空白 --><div style="margin-bottom: 50px;"></div>
+
+    <marquee style="width: 600px; margin: auto; display: block;" scrollamount="5">
+        <font size="5"color="black"><i><b>
+            いらっしゃいませ！！『何でも屋＿ヒソ』へようこそ！！！！！！
+        </i></b></font>
+    </marquee>      
+
+    <!-- 空白 --><div style="margin-bottom: 50px;"></div>
+
+    <center><h1><font siza="10"color="black">アクセス数：</font><img src="http://www5.kannet.ne.jp/~counter/count.cgi?name=HisoHisoAs33test&type=4&width=10"></h1></center>
+
+    <!-- 空白 --><div style="margin-bottom: 50px;"></div>
+
+    <center><h1>何でも屋＿ヒソとは！？</h1></center>
+    <div class="gakubuti1">
+        <p>何でも屋＿ヒソとは「技術、技能、何でもやります」という店...ではなく
+            <br>
+            ただの趣味公開場である(ｽﾞｺｰ)
+        </p>
+        <h1>
+            Welcome ご友人、私に任せなさい。
+        </h1>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
