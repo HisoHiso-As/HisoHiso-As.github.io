@@ -66,15 +66,16 @@
 <style>
     .gakubuti1 {
       border: 6px double #0084ff;
-      padding: 20px;
-      margin-bottom: 20px;
       background-color: #bbf5ff;
       text-align: center;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      width: calc(100% - 40px);  /* ← 常に少し左右に余白が残る */
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
     }
-  </style>
+</style>
 
 <body>
  
@@ -96,7 +97,7 @@
     <div class="gakubuti1">
          <p>[2025/05/15]
              <br>
-             コードの一部を修正しました。
+             コードの一部を修正しました。x2回
          <!-- 空白 --><div style="margin-bottom: 50px;"></div>
          <p>[2025/05/14]
              <br>
