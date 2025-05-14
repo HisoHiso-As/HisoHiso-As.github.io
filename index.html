@@ -20,18 +20,7 @@
     .container {
       display: flex;
     }
-　　@media screen and (max-width: 600px) {
-    .sidebar {
-      position: static;
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-
-    .main {
-      margin-left: 0;
-    }
-  }
+　　
     /* サイドメニュー（左側） */
     .sidebar {
       width: 200px;
@@ -61,6 +50,14 @@
       padding: 20px;
       background-color: #e6faff;
       height: 100vh;
+    }
+
+    @media screen and (max-width: 600px) {
+     .sidebar {
+      position: static;
+      width: 100%;
+      height: auto;
+      text-align: center;
     }
 
     /* 見出し（タイトル） */
