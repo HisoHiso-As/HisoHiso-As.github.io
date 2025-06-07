@@ -1,0 +1,118 @@
+<!-- 見たな...小僧...貴様を夜桜の墓に埋めてやろう... -->
+ <!-- この試作救世主の夜桜(プロトメサイアノヨザクラ)になぁ... -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Steam deck, 繋がらない, ネット, WiFi, Wi-Fi, 何でも屋, ヒソ">
+  <meta name="description" content="何でも屋＿ヒソです。技術、技能なんでもお任せ...いやココはただの趣味公開場です。">
+  <title>Steam deckのWi-Fi繋がらない問題_何でも屋＿ヒソ</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      margin: 0;
+      background-color: #fefefe;
+    }
+
+    /* レイアウト全体のコンテナ（横並びにするためにflex） */
+    .container {
+      display: flex;
+    }
+
+    /* サイドメニュー（左側） */
+    .sidebar {
+      width: 100px;
+      background-color: #8bd0ff;
+      padding: 20px;
+      border-right: 2px solid #999; /* 右に仕切り線 */
+      height: 100vh; /* 全画面の高さ */
+      position: fixed; 
+    }
+
+    /* サイドメニュー内のリンク設定 */
+    .sidebar a {
+      display: block;
+      margin-bottom: 10px;
+      color: #a8489a;
+      text-decoration: none;
+    }
+
+    /* リンクにカーソルを乗せた時の見た目 */
+    .sidebar a:hover {
+      background-color: #0066ff;
+    }
+
+    /* メインコンテンツ（右側） */
+    .main {
+      margin-left: 100px;
+      flex-grow: 1;
+      padding: 20px;
+      background-color: #e6faff;
+      height: 100vh;
+      max-width: 100%;
+    }
+
+    /* 見出し（タイトル） */
+    h1 {
+      font-size: 20px;
+      color: #003366;
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<style>
+    .gakubuti1 {
+      border: 6px double #0084ff;
+      background-color: #bbf5ff;
+      max-width: 900px;
+      width: calc(100% - 100px);  /* ← 常に少し左右に余白が残る */
+      margin: 20px auto;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+</style>
+
+<body>
+ 
+ <div class="container">
+ 
+   <!-- 左のメニュー欄 -->
+   <div class="sidebar">
+     <a href="../../index.html">TOP</a>
+     <a href="../../koushin.html">更新履歴</a>
+     <a href="../../profile.html">プロフィール</a>
+     <a href="../../hitorigoto.html">ひとりごと</a>
+     <a href="../../Linux.html">Linux</a>
+   </div>
+ 
+   <!-- 右のメイン表示欄 -->
+  <div id=top class="main">
+   <div class="gakubuti1">
+         <h1>[2025/06/08]_Steam deckのWi-Fi繋がらない問題</h1>
+         <!-- 空白 --><div style="margin-bottom: 50px;"></div>
+         <p>マージでクソですよ。急に繋がらなくなるんですもん。6/2のアプデをしてからですよ。
+         <br>全くもう(ガチ怒り)
+         <br>何時間も格闘してようやく繋がりました。
+         <br>どんな感じだったのか説明すると、
+         <br>「接続中で永遠にグルグルしてる」-「発熱ヤバイ」-「キャンセルを押すとボタンが効かなくなり、Wi-Fiをオフにできなくなる」-「再起動でフリーズ」
+         <br>ね？終わってるでしょ？(呆れ)
+         <br>この問題は開発者モードの「WPAサプリカントのWi-Fiバックエンドを強制する」というのをONにすることによって解決しました。
+         <br>Valveはこの設定をデフォルトでONにしろ(静かなる怒り)
+         <br>わかりやすいように写真を貼っておきますね。直撮りでごめんなさいね。
+         <br>許してください！！何でもしますから！！(何でもするとは言っていない(言った))
+            <!-- 空白 --><div style="margin-bottom: 50px;"></div>
+            <center><img src="./stdk.png" alt="Steam Deckの画像。OLEDだよ(自慢)" width="500"></center>
+            
+         </p>
+     </div>
+   </div>
+ 
+ </div>
+ 
+ </body>
+ </html>
+ 
