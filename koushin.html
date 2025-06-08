@@ -59,6 +59,41 @@
       color: #003366;
       margin-top: 0;
     }
+
+    /* スマホ用のやーつ*/
+    @media screen and (max-width: 768px) {
+      
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: #8bd0ff;
+        border-bottom: 2px solid #999;
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+      
+      .sidebar a {
+        text-decoration: none;
+        color: #a8489a;
+        font-weight: bold;
+      }
+      
+      .sidebar a:last-child::after {
+        content: "";
+      }
+      
+      .main {
+        margin-left: 0;
+      }
+    }
+
   </style>
 </head>
 
@@ -100,7 +135,7 @@
  
     <div class="gakubuti1">
 
-         <p class="kuuhaku">[2025/06/08]<br>凡ミス直し。ハズカシッ！ゴリ押しが効かなくなった。クソが。<br>賢い方法にしました。</p>
+         <p class="kuuhaku">[2025/06/08]<br>凡ミス直し。ハズカシッ！<br>ゴリ押しが効かなくなった。クソが。<br>賢い方法にしました。<br>スマホ向けレイアウト追加しました。やったね</p>
          <p class="kuuhaku">[2025/05/17]<br>コードの一部を修正しました。</p>
          <p class="kuuhaku">[2025/05/16]<br>Linuxカテゴリーの追加と記事追加<br>コードの一部を修正しました。</p>
          <p class="kuuhaku">[2025/05/15]<br>コードの一部を修正しました。x5回<br>ひとりごとを追加</p>
