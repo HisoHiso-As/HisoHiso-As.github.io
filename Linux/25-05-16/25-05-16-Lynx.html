@@ -59,6 +59,41 @@
       color: #003366;
       margin-top: 0;
     }
+
+    /* スマホ用のやーつ*/
+    @media screen and (max-width: 768px) {
+      
+      .container {
+        flex-direction: column;
+      }
+
+      .sidebar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
+        background-color: #8bd0ff;
+        border-bottom: 2px solid #999;
+        position: static;
+        width: 100%;
+        height: auto;
+      }
+      
+      .sidebar a {
+        text-decoration: none;
+        color: #a8489a;
+        font-weight: bold;
+      }
+      
+      .sidebar a:last-child::after {
+        content: "";
+      }
+      
+      .main {
+        margin-left: 0;
+      }
+    }
+
   </style>
 </head>
 
